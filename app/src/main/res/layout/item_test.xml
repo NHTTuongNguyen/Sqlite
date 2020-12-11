@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_margin="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profileImage"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="10dp"
+            android:src="@color/colorPrimary"
+            app:civ_border_color="#FF000000" />
+
+
+        <TextView
+            android:textSize="17dp"
+            android:textColor="@color/colorAccent"
+            android:id="@+id/txtnamesinhvientest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/profileImage"
+            android:text="Name" />
+
+        <TextView
+            android:id="@+id/txtphonesinhvientest"
+            android:layout_below="@id/txtnamesinhvientest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/profileImage"
+            android:text="026656" />
+        <TextView
+            android:id="@+id/txtdiachisinhvientest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtphonesinhvientest"
+            android:layout_toRightOf="@+id/profileImage"
+            android:text="Hcm" />
+    </RelativeLayout>
+</LinearLayout>
